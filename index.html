@@ -11,15 +11,13 @@
   <main>
     <h1>Top Ten Places To Visit In America</h1>
    
-    <div id="buttons justify-center">
-    <select id= "filters" ></select>
-      <button class="btn"> Show All </button>   
-       <button class="btn"> National Parks </button>
-       <button class="btn"> Beaches </button>
-       <button class="btn"> Attractions</button>
+    <div class="button_container">
+     <input type="button" id="Show All" value="ShowAll">
+     <input type="button" id="National Parks" value="NationalParks">
+     <input type="button" id="Beaches" value="Beaches"> 
+     <input type="button" id="Attractions"value="Attractions">
      </div>
-  
-    
+   
 
     <div class="card - container">
       <div class="image_container">
@@ -82,7 +80,7 @@
     </div>
     <div class="card-">
     </div>
-    <div class="image_container glaciers" >
+    <div class="image_container glaciers Attractions" >
       <img src="Images/TheStatueofliberty.jpeg">
       <div class="center_tag">
     <span>Rank #1</span>
@@ -101,9 +99,9 @@
       </div>
         <p> The White House</p>
         <br>
-        The White House has been the seat of the US goverment and home of the Presidents
+        <p>The White House has been the seat of the US goverment and home of the Presidents
         of the United States of America for more than 200 years. You are encouraged to schedule a tour 
-        as early as possible because many spots fill up quickly.
+        as early as possible because many spots fill up quickly.</p>
       </div>
       <div class="card-">
       </div>
@@ -164,94 +162,39 @@
                   You can visit all year round. 
                       
                   <script>
-                 
-                    document.addEventListener('DOMContentLoaded'), () => {
-                    const ShowAll = document.getElementById ('Show All')
-                    const NationalParks = document.getElementById ('National Parks')
-                    const Beaches = document.getElementById ('Beaches')
-                    const Attractions = document.getElementById ('Attractions')
-                    }
-                
+              
+                   
+            
+
+let National_Parks = document.getElementById('NationalParks');
+let NationalParks= document.getElementsByClassName('NationalParks');
 
 
-let Beaches = document.getElementsByClassName('Beaches');
+let Beaches_x = document.getElementById('Beaches');
+let Beaches= document.getElementsByClassName('Beaches');
+
+let Show_All = document.getElementById('Show All');
+let Show All = document.getElementsByClassName('Show All');
 
 
-let National_Parks = document.getElementById('National Parks');
-let Beaches= document.getElementById('Beaches');
-let Attractions = document.getElementById('Attractions');
-let all = document.getElementById('All')
-
-
-
-let National_Parks = document.getElementById('National Parks');
-let National_Parks= document.getElementsByClassName('National Parks');
-
-
-
-let Attractions = document.getElementById(Attractions);
+let Attractions_x = document.getElementById(Attractions);
 let Attractions = document.getElementsByClassName(Attractions);
 
-// make a click even that selects data professors and not graphics professors
-data_prof.onclick = function(){
-    for (let i = 0; i < data.length; i++) {
-        data[i].classList.add('border_class');
-    }
-    for (let i = 0; i < gfx.length; i++) {
-        gfx[i].classList.remove('border_class');
-    }
-}
 
-// make a click event that selects graphics professors and not data professors
-gfx_prof.onclick = function(){
-    for (let i = 0; i < gfx.length; i++) {
-        gfx[i].classList.add('border_class');
+Attractions_x.onclick = function(){
+    for (let i = 0; i < Attractions.length; i++) {
+        Attractions[i].classList.add('border_class');
     }
-    for (let i = 0; i < data.length; i++) {
-        data[i].classList.remove('border_class');
+    for (let i = 0; i < Beaches.length; i++) {
+        Attractions[i].classList.remove('border_class');
     }
 }
 
 
 
-//if adjunct is clicked, add border_class to the list of classes and remove it from the professors
-adjuncts_button.onclick = function(){
-    for (let i = 0; i < adjuncts.length; i++) {
-        adjuncts[i].classList.add('border_class');
-    }
-    for (let i = 0; i < professors.length; i++) {
-        professors[i].classList.remove('border_class');
-    }
-}
-
-//if professors is clicked, add border_class to the list of classes and remove it from the adjuncts
-professor_button.onclick = function(){
-    for (let i = 0; i < professors.length; i++) {
-        professors[i].classList.add('border_class');
-    }
-    for (let i = 0; i < adjuncts.length; i++) {
-        adjuncts[i].classList.remove('border_class');
-    }
-}
-
-//if all is clicked, remove border_class from all divs
-all.onclick = function(){
-    for (let i = 0; i < professors.length; i++) {
-        professors[i].classList.remove('border_class');
-    }
-    for (let i = 0; i < adjuncts.length; i++) {
-        adjuncts[i].classList.remove('border_class');
-    }
-
-}
-
-
         
         
-        
-        
-        
-                </script>
+ </script>
         
             </body>
         </html>
