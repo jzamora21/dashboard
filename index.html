@@ -4,61 +4,75 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="styles.css">
-  <title>Document</title>
+  <title>Top 10 places to visit in the United States of America</title>
 </head>
 <body>
+
   <main>
-    <header>Top Ten Places To Visit In America</header>
-    <div class="card- container">
-     <div class="image_container glaciers">
-    <div class="center_tag">
-           <span>Rank #1</span>
+    <h1>Top Ten Places To Visit In America</h1>
+   
+    <div id="buttons justify-center">
+    <select id= "filters" ></select>
+      <button class="btn"> Show All </button>   
+       <button class="btn"> National Parks </button>
+       <button class="btn"> Beaches </button>
+       <button class="btn"> Attractions</button>
+     </div>
+  
+    
+
+    <div class="card - container">
+      <div class="image_container">
+        <div class="filters NationalParks"></div>
+        <img src="Images/Glacier.jpeg">
+        <div class="center_tag">
+          <span> Rank #1</span>
         </div>
         <div class="text_tag">
           <p>Glacier National Park </p>
           <br>
-         
-         <p>
-            Glacier National Park is one of the most visited places in the US. It has two 
-            mountain ranges and includes more than 700 lakes across the state of Montana.
-         
-          </p>
-         
+         <p> Glacier National Park is one of the most visited places in the US. It has two mountain ranges and includes more than 700 lakes across the state of Montana. </p>
         </div>
-  
-      </div>
-       <div class="card-">
-        
-       </div>
-      <div class="image_container Yellowstone National Park" >
-        <div class="center_tag">
-          <div class="card-content">
-           </div>
+    </div>
+       <div class="card -- container">
+        </div>
+        <div class="image_container" >
+           <img src="Images/Yellowstone national park.jpeg">
+           <div class="center_tag">
+           <div class="card-content">
+        </div>
           <span> Rank #2</span>
         </div>
+        <div class="text_tag"></div>
            <p> Yellowstone National Park </p>
            <br>
            <p>
-            Yellowstone national park has a 2 million acre that stretches across Wyoming, Montana, and Idaho that is special 
-
-          </p>
-
-           </div>
+            Yellowstone national park has a 2 million acre that stretches across Wyoming, Montana, and Idaho that is special </p>
+          </div>
      
-      <div class="image_container glaciers">
-        <div class="center_tag">
-        <span >Rank #1</span>
+
+
+     <div class="card -- container">
       </div>
-        
-           <p> Siesta Key</p>
+
+      <div class="image_container glaciers">
+        <img src="Images/Siesta Key.jpeg">
+      <div class="center_tag">
+        <div class="card-content">
+        </div>
+      <span >Rank #1</span>
+         </div>
+         <div class="text_tag"></div>
+           <p> Siesta Key Beach</p>
            Siesta Key is an eight mile long island where you can go
            and get a relaxing gateway in Florida's South westcoast. You can take the free trolly service  and get around the island.
        </div>
-       <div class="text_tag"></div>
-    
-      
+       
 
-      <div class="image_container glaciers">
+      <div class="card -- container">
+        </div>
+        <div class="image_container glaciers">
+          <img src="Images/Maui Beach.jpeg">
         <div class="center_tag">
           <span> Rank #2</span>
         </div>
@@ -68,7 +82,8 @@
     </div>
     <div class="card-">
     </div>
-    <div class="image_container Yellowstone National Park" >
+    <div class="image_container glaciers" >
+      <img src="Images/TheStatueofliberty.jpeg">
       <div class="center_tag">
     <span>Rank #1</span>
       </div> 
@@ -79,7 +94,8 @@
     </div>
     <div class="card-">
     </div>
-    <div class="image_container Yellowstone National Park" >
+    <div class="image_container glaciers" >
+      <img src="Images/The White House.jpeg">
       <div class="center_tag">
       <span>Rank #2</span>
       </div>
@@ -91,7 +107,9 @@
       </div>
       <div class="card-">
       </div>
-      <div class="image_container Yellowstone National Park" >
+      <div class="image_container glaciers" >
+        <img src="Images/Metropolitan Museum of Art.jpeg">
+  
         <div class="center_tag">
             <span> Rank #1 </span>
         </div>
@@ -104,7 +122,8 @@
         </div>
         <div class="card-">
         </div>
-        <div class="image_container Yellowstone National Park" >
+        <div class="image_container glaciers" >
+          <img src="Images/saam.jpg">
           <div class="center_tag">
             <span> Rank #2</span>
             </div>
@@ -113,9 +132,140 @@
               The Smithnosian National Museum of Natural History is located in Washington, Dc.
               This museum connects to people to the unfold history of the Earth. It is free admission
               and is open to the public everyday.
+            </div>
+            <div class="card-">
+            </div>
+            <div class="image_container glaciers" >
+              <img src="Images/Grand Canyon.jpeg">
+              <div class="center_tag">
+                <span>
+                 Rank #1
+                </span>
+              </div>
+                <p>Grand Canyon National Park</p>
+                <br>
+                The Grand Canyon is located in Northern Arizona and
+                it is one of the greatest tourist attractions in the United States. 
+                It's colorful landscape and scenery attracts people from around the world.
+                The best time to visit is from April to May.
+              </div>
+              <div class="card-">
+              </div>
+              <div class="image_container glaciers" >
+                <img src="Images/Manhattan.jpeg">
+                <div class="center_tag">
+                  <span>
+                   Rank #2
+                  </span>
+                </div>
+                  <p> Manhattan</p>
+                  Manhattan is one of the New York's five boroughs. It's skyline is the most appealing to many tourists
+                  and there are so many things to do such as catch a broadway show, climb the Empire State Building and more. 
+                  You can visit all year round. 
+                      
+                  <script>
+                 
+                    document.addEventListener('DOMContentLoaded'), () => {
+                    const ShowAll = document.getElementById ('Show All')
+                    const NationalParks = document.getElementById ('National Parks')
+                    const Beaches = document.getElementById ('Beaches')
+                    const Attractions = document.getElementById ('Attractions')
+                    }
+                
 
+
+let Beaches = document.getElementsByClassName('Beaches');
+
+
+let National_Parks = document.getElementById('National Parks');
+let Beaches= document.getElementById('Beaches');
+let Attractions = document.getElementById('Attractions');
+let all = document.getElementById('All')
+
+
+
+let National_Parks = document.getElementById('National Parks');
+let National_Parks= document.getElementsByClassName('National Parks');
+
+
+
+let Attractions = document.getElementById(Attractions);
+let Attractions = document.getElementsByClassName(Attractions);
+
+// make a click even that selects data professors and not graphics professors
+data_prof.onclick = function(){
+    for (let i = 0; i < data.length; i++) {
+        data[i].classList.add('border_class');
+    }
+    for (let i = 0; i < gfx.length; i++) {
+        gfx[i].classList.remove('border_class');
+    }
+}
+
+// make a click event that selects graphics professors and not data professors
+gfx_prof.onclick = function(){
+    for (let i = 0; i < gfx.length; i++) {
+        gfx[i].classList.add('border_class');
+    }
+    for (let i = 0; i < data.length; i++) {
+        data[i].classList.remove('border_class');
+    }
+}
+
+
+
+//if adjunct is clicked, add border_class to the list of classes and remove it from the professors
+adjuncts_button.onclick = function(){
+    for (let i = 0; i < adjuncts.length; i++) {
+        adjuncts[i].classList.add('border_class');
+    }
+    for (let i = 0; i < professors.length; i++) {
+        professors[i].classList.remove('border_class');
+    }
+}
+
+//if professors is clicked, add border_class to the list of classes and remove it from the adjuncts
+professor_button.onclick = function(){
+    for (let i = 0; i < professors.length; i++) {
+        professors[i].classList.add('border_class');
+    }
+    for (let i = 0; i < adjuncts.length; i++) {
+        adjuncts[i].classList.remove('border_class');
+    }
+}
+
+//if all is clicked, remove border_class from all divs
+all.onclick = function(){
+    for (let i = 0; i < professors.length; i++) {
+        professors[i].classList.remove('border_class');
+    }
+    for (let i = 0; i < adjuncts.length; i++) {
+        adjuncts[i].classList.remove('border_class');
+    }
+
+}
+
+
+        
+        
+        
+        
+        
+                </script>
+        
+            </body>
+        </html>
+        
+        
 
     </main>
   </main>
 </body>
 </html>
+      
+            
+
+
+      
+
+        
