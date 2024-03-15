@@ -17,10 +17,16 @@
      <input type="button" id="Beaches" value="Beaches"> 
      <input type="button" id="Attractions"value="Attractions">
      </div>
+     
+     <div class="button_container">
+      <input type="button" id="Westcoast" value="Westcoast">
+      <input type="button" id="Eastcoast" value="Eastcoast">
+     </div>
+      
    
 
-    <div class="card-container NationalParks">
-      <div class="image_container">
+    <div class="card--container">
+      <div class="image_container NationalParks">
         <img src="Images/Glacier.jpeg">
         <div class="center_tag">
           <span> Rank #1</span>
@@ -31,9 +37,9 @@
          <p> Glacier National Park is one of the most visited places in the US. It has two mountain ranges and includes more than 700 lakes across the state of Montana. </p>
         </div>
     </div>
-       <div class="card--container NationalParks">
+       <div class="card--container">
         </div>
-        <div class="image_container" >
+        <div class="image_container NationalParks" >
            <img src="Images/Yellowstone national park.jpeg">
            <div class="center_tag">
            <div class="card-content">
@@ -49,10 +55,10 @@
      
 
 
-     <div class="card--container Beaches">
+     <div class="card--container ">
       </div>
 
-      <div class="image_container glaciers">
+      <div class="image_container Beaches">
         <img src="Images/Siesta Key.jpeg">
       <div class="center_tag">
         <div class="card-content">
@@ -66,9 +72,9 @@
        </div>
        
 
-      <div class="card--container Beaches">
+      <div class="card--container">
         </div>
-        <div class="image_container glaciers">
+        <div class="image_container glaciers Beaches">
           <img src="Images/Maui Beach.jpeg">
         <div class="center_tag">
           <span> Rank #2</span>
@@ -77,9 +83,9 @@
      <br>
      Maui extends to 30 miles of beaches. You'll find white or black sand beaches. There is a lot of spots to surf or simply swim, snorkel or sunbathe. The best time to visit is from April to May or from September to November.
     </div>
-    <div class="card--container Attractions">
+    <div class="card--container">
     </div>
-    <div class="image_container glaciers Attractions" >
+    <div class="image_container Attractions" >
       <img src="Images/TheStatueofliberty.jpeg">
       <div class="center_tag">
     <span>Rank #1</span>
@@ -89,8 +95,8 @@
       The Statue Of Liberty is one of the most recognizable figures in the world. The liberty island is located in the New York Harbor and can only be 
       reached by ferry boat. The best time to visit the Statue Of Liberty is from Tuesday-Thursday during spring or fall. 
     </div>
-    <div class="card--container Attractions"> </div>
-    <div class="image_container glaciers" >
+    <div class="card--container"> </div>
+    <div class="image_container Attractions" >
       <img src="Images/The White House.jpeg">
       <div class="center_tag">
       <span>Rank #2</span>
@@ -101,9 +107,9 @@
         of the United States of America for more than 200 years. You are encouraged to schedule a tour 
         as early as possible because many spots fill up quickly.</p>
       </div>
-      <div class="card--container Attractions">
+      <div class="card--container">
       </div>
-      <div class="image_container glaciers" >
+      <div class="image_container Attractions" >
         <img src="Images/Metropolitan Museum of Art.jpeg">
   
         <div class="center_tag">
@@ -116,9 +122,9 @@
           the largest museum in the US and fourth largest museum in the world.
           It contains more than 1.5 million pieces of work. 
         </div>
-        <div class="card--container Attractions">
+        <div class="card--container">
         </div>
-        <div class="image_container glaciers" >
+        <div class="image_container Attractions" >
           <img src="Images/saam.jpg">
           <div class="center_tag">
             <span> Rank #2</span>
@@ -129,9 +135,9 @@
               This museum connects to people to the unfold history of the Earth. It is free admission
               and is open to the public everyday.
             </div>
-            <div class="card--container NationalParks">
+            <div class="card--container">
             </div>
-            <div class="image_container glaciers" >
+            <div class="image_container NationalParks" >
               <img src="Images/Grand Canyon.jpeg">
               <div class="center_tag">
                 <span>
@@ -145,9 +151,9 @@
                 It's colorful landscape and scenery attracts people from around the world.
                 The best time to visit is from April to May.
               </div>
-              <div class="card--container Attractions">
+              <div class="card--container">
               </div>
-              <div class="image_container glaciers" >
+              <div class="image_container Attractions" >
                 <img src="Images/Manhattan.jpeg">
                 <div class="center_tag">
                   <span>
@@ -169,7 +175,7 @@
             let NationalParks_button = document.getElementById('NationalParks');
             let Beaches_button = document.getElementById('Beaches');
             let Attractions_button = document.getElementById('Attractions');
-            let ShowAll = document.getElementById('ShowAll');
+            let ShowAll_button = document.getElementById('ShowAll');
 
             NationalParks_button.onclick = function(){
               for (let i = 0; i < NationalParks.length; i++) {
@@ -182,9 +188,78 @@
                     Attractions[i].classList.remove('border_class');
                   }
                 }
-               
+                Beaches_button.onclick = function(){
+              for (let i = 0; i < Beaches.length; i++) {
+                    Beaches[i].classList.add('border_class');
+                  }
+                  for (let i = 0; i < Attractions.length; i++) {
+                    Attractions[i].classList.remove('border_class');
+                  }
+                  for (let i = 0; i < NationalParks.length; i++) {
+                    NationalParks[i].classList.remove('border_class');
+                }
+              }
+                Attractions_button.onclick = function(){
+                 for (let i = 0; i < Attractions.length; i++) {
+                    Attractions[i].classList.add('border_class');
+                  }
+                  for (let i = 0; i < Beaches.length; i++) {
+                    Beaches[i].classList.remove('border_class');
+                  }
+                  for (let i = 0; i < NationalParks.length; i++) {
+                    NationalParks[i].classList.remove('border_class');
+                }
+              }
+              ShowAll_button.onclick = function(){
+                for (let i = 0; i < NationalParks.length; i++) {
+                    NationalParks[i].classList.remove('border_class')
+                  }
+                    for (let i = 0; i < Attractions.length; i++) {
+                    Attractions[i].classList.remove('border_class')
+                  }
+                    for (let i = 0; i < Beaches.length; i++) {
+                     Beaches[i].classList.remove('border_class')
+            }
+          }
+                let Westcoast = document.getElementsByClassName('Westcoast');
+                let Eastcoast = document.getElementsByClassName('Eastcoast');
+                
+                let Westcoast_button = document.getElementById('Westcoast');
+                let Eastcoast_button = document.getElementById('Eastcoast');
 
-        
+                Westcoast_button.onclick = function(){
+              for (let i = 0; i < NationalParks.length; i++) {
+                    NationalParks[i].classList.add('border_class');
+                  }
+                    for (let i = 0; i < Beaches.length; i++) {
+                    Beaches[i].classList.add('border_class');
+                  }
+                  for (let i = 0; i < Attractions.length; i++) {
+                    Attractions[i].classList.remove('border_class');
+                  }
+                }
+                Eastcoast_button.onclick = function(){
+                for (let i = 0; i < Attractions.length; i++) {
+                   Attractions[i].classList.add('border_class');
+                  }
+                    
+                  for (let i = 0; i < Beaches.length; i++) {
+                    Beaches[i].classList.remove('border_class');
+                  }
+                  
+                  for (let i = 0; i < NationalParks.length; i++) {
+                    NationalParks[i].classList.remove('border_class');
+                  }
+                }
+            
+
+
+          
+
+
+
+
+
         
  </script>
         

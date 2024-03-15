@@ -8,22 +8,31 @@ body, h2, h3, h4, h5, h6, p{
   background-color: rgb(248, 230, 250);
   
 }
+body{
+  background-image: url(Images/Pink.jpeg);
+}
+
 h1{
   color: rgb(202, 72, 141);
   font-size: 30px;
   margin-bottom: 20px;
 }
-.card-container{
+.card--container{
 
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
   justify-content: center;
-
 }
 
 .image_container{
   width: calc(45% - 20px);
+  padding: 20px;
+  border-top: white;
+  border-bottom: white;
+  background-color: antiquewhite;
+  transition: ease-in-out;
+
 }
 
 img {
@@ -32,22 +41,21 @@ img {
   width: 90%;
   object-fit: contain;
  display: block;
+ padding-top: ;
+ background: rgb(247, 247, 247);
+ padding: 20px 0px 0px;
 
 }
 
-.center_tag{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: rgb(228, 32, 32);
-  width: 100;
-  height: 5vh;
-}
 .container{
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
   justify-content: center;
+  border: 2px; color: rgb(170, 113, 40);
+ 
+  
+
 }
 .center_tag{
   display: flex;
@@ -58,16 +66,22 @@ img {
   height: 5vh;
 }
 .border_class{
-  border: 5px solid gold;
+  border: 5px solid rgb(93, 61, 78);
   box-sizing: border-box;
 }
 .button_container{
 padding: 20px;
-}
-.button{
-  color: rgb(226, 43, 70);
+border: rgb(25, 0, 11);
+border-radius: 5px;
+margin-right: 2%;
 
 }
+.button_container :hover{
+  background-color: #df7ca0;
+}
+
+
+
 
 
 
