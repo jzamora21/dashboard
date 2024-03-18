@@ -1,8 +1,8 @@
 *{
   box-sizing: border-box;
 }
-body, h2, h3, h4, h5, h6, p{
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+body, h2, h3, h4, h5, h6 {
+  font-family: Georgia, 'Times New Roman', Times, serif
   margin: 0;
   padding: 0;
   background-color: rgb(248, 230, 250);
@@ -11,11 +11,20 @@ body, h2, h3, h4, h5, h6, p{
 body{
   background-image: url(Images/Pink.jpeg);
 }
+p{
+  text-align: center;
+ color: brown;
+font-size: medium;
+font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 
+}
 h1{
-  color: rgb(202, 72, 141);
+  color: rgb(62, 51, 57);
   font-size: 30px;
   margin-bottom: 20px;
+  text-align: center;
+  background-color: rgb(213, 221, 228);
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
 }
 .card--container{
 
@@ -29,9 +38,10 @@ h1{
   width: calc(45% - 20px);
   padding: 20px;
   border-top: white;
-  border-bottom: white;
-  background-color: antiquewhite;
+  border-bottom: rgb(245, 244, 244);
+  background-color: rgb(251, 250, 248);
   transition: ease-in-out;
+  border-style: double
 
 }
 
@@ -52,8 +62,8 @@ img {
   flex-wrap: wrap;
   gap: 20px;
   justify-content: center;
-  border: 2px; color: rgb(170, 113, 40);
- 
+  border: 2px; color: rgb(85, 0, 80);
+ box-shadow: #df7ca0;
   
 
 }
@@ -61,27 +71,31 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: rgb(168, 154, 191);
+  background-color: rgb(227, 227, 243);
   width: 100;
   height: 5vh;
+  text-align: center;
 }
 .border_class{
-  border: 5px solid rgb(93, 61, 78);
+  border: 5px solid rgb(21, 197, 118);
   box-sizing: border-box;
 }
 .button_container{
 padding: 20px;
-border: rgb(25, 0, 11);
+border: rgb(17, 15, 16);
 border-radius: 5px;
 margin-right: 2%;
 
 }
 .button_container :hover{
   background-color: #df7ca0;
+  box-shadow: #df7ca0;
 }
-
-
-
+@media only screen and (max-width: 600px) {
+  body {
+    background-color: lightblue;
+  }
+}
 
 
 
